@@ -5,13 +5,12 @@ var HodorBot = require('../lib/hodorbot');
 var token = process.env.BOT_API_KEY;
 var dbPath = process.env.BOT_DB_PATH;
 var name = process.env.BOT_NAME;
-var port = process.env.PORT || CONFIG.port;
+var port = process.env.PORT;
 
-var norrisbot = new HodorBot({
+var hodorbot = new HodorBot({
     token: token,
     dbPath: dbPath,
     name: name
 });
 
-norrisbot.run();
-app.listen(port);
+hodorbot.run();
