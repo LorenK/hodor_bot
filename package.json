@@ -4,7 +4,7 @@
   "description": "Hodor!",
   "main": "lib/hodorbot.js",
   "scripts": {
-    "test": "hodor"
+    "start": "node bin/bot.js"
   },
   "repository": {
     "type": "git",
